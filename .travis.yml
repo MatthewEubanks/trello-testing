@@ -8,7 +8,7 @@ env:
 deploy:
   provider: heroku
   api_key:
-    secure: 70204ff5-1109-4a5a-bc2b-95a123876c50
-  app: trello-testing
+    secure: cc338287-cdc4-4419-8741-44ca15313b6a
+  app: safe-ravine-15133
   on:
     repo: matteprg/trello-testing
