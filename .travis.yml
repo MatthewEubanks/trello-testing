@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: TDlYPJ1MyY+BODF0q+NXGGNQ5+TQk4VLzON23M7r/Z6br54JhSIZO18Faa3yQtXt72ngjtBhjAb1zYSsG/tefy2rJSwgRWknhiNaq/TqYweFNOl1iNeigfx2YueCiFufOV7yuCzMAXORe1fBhaTGtNEkIcLtGfK1rpPnzKAmldFEqpZIIW7nB8hYeMmLuO5rUqNX+LBvvymQuKVrJXVDzuEd6x7LsHNWzwBjJX60Nv2L7PWA3TqOoasUVY6SeaO6Ss11q+A7Ii9GiemAALkLYegbQLlBJELieuS+My16IAzEwY3vnROZoP1oBA+WDVTtMzGnERzupWIE/hZn7It1wmWGmyM74c0TiTgIx9nHcOdpH4jBjh4VzWQT0Nhm3IeGgLIISpg4PeuTACAQMZKwiYHpM8o5lrtkwwPfhAaPv+GdyVN41DkD2dsB296YG1j3I81IhenjMf+LkjJAalqgheVNPTIVN8GSm7TPEKhZXwuCKySygjUm9+OM6orC97S0WY1wkl7wEv6HNdTQNFsrpdtWwrpMBNFO+Ci2DjsphWEjfIbfCYEdoszmUcbQgM1CWaE/d/Dz209QhLhjt2qWDzf2Itn/V/5ADnU8Cgvi3zeK463Cn+8fJg6Rd2LLKLbKJf1PClc4ToEhPcMFWsGA4yNkixLM2kc0nVtjpExosBI=
+  app: trello-testing
+  on:
+    repo: matteprg/trello-testing
